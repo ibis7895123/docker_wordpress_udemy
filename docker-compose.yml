@@ -1,0 +1,50 @@
+version: "3.2"
+services:
+  wordpress-mysql:
+    image: mysql:8.0
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./Dockerfiles/mysql/init:/docker-endpoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=dkwpudrt
+      - MYSQL_DATABASE=$DB_DATABASE
+      - MYSQL_USER=$DB_USERNAME
+      - MYSQL_PASSWORD=$DB_PASSWORD
+    container_name:
+      "${PROJECT_NAME}-db"
+    ports:
+      - "3307:3306"
+  wordpress-nginx:
+    build:
+      context: .
+      dockerfile: ./Dockerfiles/nginx/Dockerfile
+      args:
+        - PROJECT_ROOT=$PROJECT_ROOT
+    volumes:
+      - ./Dockerfiles/nginx/conf.d:/etc/nginx/conf.d
+      - .:/var/www/
+    ports:
+      - "8010:80"
+    links:
+      - wordpress-fpm
+    depends_on:
+      - wordpress-fpm
+    container_name:
+      "${PROJECT_NAME}-nginx"
+    image: wordpress-nginx
+    environment:
+      - PROJECT_ROOT
+  wordpress-fpm:
+    build:
+      context: .
+      dockerfile: ./Dockerfiles/wordpress-fpm/Dockerfile
+      args:
+        - PROJECT_ROOT=$PROJECT_ROOT
+    volumes:
+      - .:/var/www/
+    links:
+      - mysql
+    container_name: "${PROJECT_NAME}-fpm"
+    image: wordpress-fpm
+    environment:
+      - PROJECT_ROOT
