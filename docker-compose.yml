@@ -6,14 +6,14 @@ services:
       - ./data/mysql:/var/lib/mysql
       - ./Dockerfiles/mysql/init:/docker-endpoint-initdb.d
     environment:
-      - MYSQL_ROOT_PASSWORD=dkwpudrt
+      - MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
       - MYSQL_DATABASE=$DB_DATABASE
       - MYSQL_USER=$DB_USERNAME
       - MYSQL_PASSWORD=$DB_PASSWORD
     container_name:
       "${PROJECT_NAME}-db"
     ports:
-      - "3307:3306"
+      - "33066:3306"
   wordpress-nginx:
     build:
       context: .
