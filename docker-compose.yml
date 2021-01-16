@@ -43,7 +43,7 @@ services:
     volumes:
       - .:/var/www/
     links:
-      - mysql
+      - wordpress-mysql
     container_name: "${PROJECT_NAME}-fpm"
     image: wordpress-fpm
     environment:

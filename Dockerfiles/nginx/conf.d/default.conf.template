@@ -6,7 +6,7 @@ server {
   client_max_body_size 20M;
   listen 80 default_server;
 
-  root /var/www/$PROJECT_ROOT/public;
+  root /var/www/$PROJECT_ROOT;
   index index.php index.html index.htm;
 
   location / {
