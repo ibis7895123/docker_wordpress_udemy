@@ -45,21 +45,19 @@
             alt="SAMPLE WEB SITE" /></a></h1>
       <div id="menu">
         <ul>
-          <li class="home"><a
-              href="<?php home_url(); ?>/">ホーム</a>
-          </li>
-          <li><a href="<?php home_url(); ?>/service">事業内容</a>
-          </li>
-          <li><a href="<?php home_url(); ?>/company">会社概要</a>
-          </li>
-          <li><a
-              href="<?php home_url(); ?>/archive-news">お知らせ</a>
-          </li>
-          <li><a
-              href="<?php home_url(); ?>/archive-news">ブログ</a>
-          </li>
-          <li><a href="<?php home_url(); ?>/contact">お問い合わせ</a>
-          </li>
+        <li class="home"><a href="<?php home_url(); ?>/">ホーム</a></li>
+        <?php
+        wp_nav_menu(
+            array(
+              'theme_location'=>'place_global',
+              'container' =>'',
+              'menu_class' =>'',
+              'items_wrap' => '%3$s', //<ul>を出力しない
+            )
+        );
+        ?>
+        <li class="home"><a href="<?php home_url(); ?>/archive-news">お知らせ</a></li>
+        <li class="home"><a href="<?php home_url(); ?>/archive-news">ブログ</a></li>
         </ul>
       </div><!-- /#menu -->
     </div><!-- /#header -->
