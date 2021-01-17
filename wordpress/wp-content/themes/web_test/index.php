@@ -154,15 +154,15 @@
     <div class="bnrL">
       <ul>
         <li><a
-            href="<?php home_url(); ?>/index"><img
+            href="<?php home_url(); ?>/"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
-            href="<?php home_url(); ?>/index"><img
+            href="<?php home_url(); ?>/"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
-            href="<?php home_url(); ?>/index"><img
+            href="<?php home_url(); ?>/"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
       </ul>

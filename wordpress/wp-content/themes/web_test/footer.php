@@ -1,7 +1,7 @@
 <div id="footMenu">
   <ul>
     <li class="home"><a
-        href="<?php home_url(); ?>/index">ホーム</a>
+        href="<?php home_url(); ?>/">ホーム</a>
     </li>
     <li><a href="<?php home_url(); ?>/service">事業内容</a>
     </li>

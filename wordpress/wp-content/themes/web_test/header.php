@@ -40,13 +40,13 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1><a href="<?php home_url(); ?>/index"><img
+      <h1><a href="<?php home_url(); ?>/"><img
             src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png"
             alt="SAMPLE WEB SITE" /></a></h1>
       <div id="menu">
         <ul>
           <li class="home"><a
-              href="<?php home_url(); ?>/index">ホーム</a>
+              href="<?php home_url(); ?>/">ホーム</a>
           </li>
           <li><a href="<?php home_url(); ?>/service">事業内容</a>
           </li>
