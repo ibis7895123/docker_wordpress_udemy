@@ -54,33 +54,18 @@
   <div id="conL">
     <div class="information">
       <h2>INFORMATION</h2>
-      <dl>
-        <dt>2013-08-04</dt>
-        <dd>
-          <span class="tab tag_gyoumu">業務について</span>
-          <a
-            href="<?php home_url(); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。
-        </dd>
-
-        <dt>2013-08-03</dt>
-        <dd>
-          <span class="tab tag_release">リリース</span>
-          <a
-            href="<?php home_url(); ?>/sample">制作実績のページ</a>を更新しました。
-        </dd>
-        <dt>2013-08-02</dt>
-        <dd>
-          <span class="tab tag_gyoumu">業務について</span>
-          <a
-            href="<?php home_url(); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。
-        </dd>
-        <dt>2013-08-01</dt>
-        <dd>
-          <span class="tab tag_gyoumu">業務について</span>
-          <a
-            href="<?php home_url(); ?>/sample">制作実績のページ</a>を更新しました。
-        </dd>
-      </dl>
+        <dl>
+          <?php
+            $infoPosts = get_posts('numberposts=3&category=[3,4]');
+            foreach($infoPosts as $post):
+          ?>
+            <dt><?php the_time('Y-m-d'); ?></dt>
+            <dd>
+              <span class="tab tag_<?php echo get_the_category()[0]->slug; ?>"><?php echo get_the_category()[0]->cat_name; ?></span>
+              <?php the_title(); ?>
+            </dd>
+          <?php endforeach; ?>
+        </dl>
     </div><!-- /.information -->
 
 
