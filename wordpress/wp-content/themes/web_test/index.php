@@ -62,7 +62,7 @@
             <dt><?php the_time('Y-m-d'); ?></dt>
             <dd>
               <span class="tab tag_<?php echo get_the_category()[0]->slug; ?>"><?php echo get_the_category()[0]->cat_name; ?></span>
-              <?php the_title(); ?>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を更新しました。
             </dd>
           <?php endforeach; ?>
         </dl>
@@ -72,55 +72,21 @@
     <div class="information">
       <h2>Blog</h2>
       <dl>
-        <dt>2013-08-04</dt>
-        <dd>
-          <div class="b_img">
-            <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
-          </div>
-          <div class="b_right">
-            <a
-              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-          </div>
-        </dd>
-
-        <dt>2013-08-04</dt>
-        <dd>
-          <div class="b_img">
-            <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
-          </div>
-          <div class="b_right">
-            <a
-              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-          </div>
-        </dd>
-
-        <dt>2013-08-04</dt>
-        <dd>
-          <div class="b_img">
-            <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
-          </div>
-          <div class="b_right">
-            <a
-              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-          </div>
-        </dd>
-
-        <dt>2013-08-04</dt>
-        <dd>
-          <div class="b_img">
-            <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
-          </div>
-          <div class="b_right">
-            <a
-              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-          </div>
-        </dd>
-
-
+        <?php
+              $infoPosts = get_posts('numberposts=3&category=5');
+              foreach($infoPosts as $post):
+            ?>
+          <dt><?php the_time('Y-m-d'); ?></dt>
+          <dd>
+            <div class="b_img">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
+            </div>
+            <div class="b_right">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を更新しました。
+            </div>
+          </dd>
+        <?php endforeach; ?>
       </dl>
     </div><!-- /.information -->
 
