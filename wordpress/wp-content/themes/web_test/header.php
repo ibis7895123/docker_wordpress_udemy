@@ -47,14 +47,12 @@
         <ul>
         <li class="home"><a href="<?php home_url(); ?>/">ホーム</a></li>
         <?php
-        wp_nav_menu(
-            array(
+        wp_nav_menu(array(
               'theme_location'=>'place_global',
               'container' =>'',
               'menu_class' =>'',
               'items_wrap' => '%3$s', //<ul>を出力しない
-            )
-        );
+        ));
         ?>
         <li class="home"><a href="<?php home_url(); ?>/archive-news">お知らせ</a></li>
         <li class="home"><a href="<?php home_url(); ?>/archive-news">ブログ</a></li>

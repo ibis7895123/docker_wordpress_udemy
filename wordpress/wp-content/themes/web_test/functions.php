@@ -7,4 +7,4 @@ register_nav_menus( //メニュー機能をオンにする
         'place_sidebar' => 'サイドメニュー',
         'place_footer' => 'フッター',
     )
-); ?>
+);
