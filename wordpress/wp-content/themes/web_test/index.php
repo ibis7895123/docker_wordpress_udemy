@@ -3,20 +3,20 @@
 <div id="slide">
   <ul class="slideInner">
     <li><img
-        src="<?php bloginfo('stylesheet_directory'); ?>/images/icatch01.jpg"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch01.jpg"
         alt="" width="940" height="300" /></li>
     <li><img
-        src="<?php bloginfo('stylesheet_directory'); ?>/images/icatch02.jpg"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch02.jpg"
         alt="" width="940" height="300" /></li>
     <li><img
-        src="<?php bloginfo('stylesheet_directory'); ?>/images/icatch03.jpg"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch03.jpg"
         alt="" width="940" height="300" /></li>
   </ul>
   <div class="slidePrev"><img
-      src="<?php bloginfo('stylesheet_directory'); ?>/images/nav_prev.png"
+      src="<?php echo get_stylesheet_directory_uri(); ?>/images/nav_prev.png"
       alt="前へ"></div>
   <div class="slideNext"><img
-      src="<?php bloginfo('stylesheet_directory'); ?>/images/nav_next.png"
+      src="<?php echo get_stylesheet_directory_uri(); ?>/images/nav_next.png"
       alt="次へ"></div>
   <div class="controlNav"></div>
 </div><!-- /#slide -->
@@ -25,7 +25,7 @@
     <div class="topNaviColumn">
       <h2>社長メッセージ</h2>
       <div class="topNaviPhoto"><img
-          src="<?php bloginfo('stylesheet_directory'); ?>/images/photo01.jpg"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo01.jpg"
           alt="" /></div>
       <p>ホームページを御覧いただきありがとうございます。弊社はお客様満足度を最優先いたします。</p>
 
@@ -33,7 +33,7 @@
     <div class="topNaviColumn">
       <h2>事業内容</h2>
       <div class="topNaviPhoto"><img
-          src="<?php bloginfo('stylesheet_directory'); ?>/images/photo02.jpg"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo02.jpg"
           alt="" /></div>
       <p>事業内容です。あいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
       <p class="topNaviDetail"><a
@@ -43,7 +43,7 @@
     <div class="topNaviColumn">
       <h2>会社概要</h2>
       <div class="topNaviPhoto"><img
-          src="<?php bloginfo('stylesheet_directory'); ?>/images/photo03.jpg"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo03.jpg"
           alt="" /></div>
       <p>会社概要です。左右のコンテンツでテキスト量が異なっても、下の｢詳しくはこちら｣が揃うようになっています。</p>
       <p class="topNaviDetail"><a
@@ -91,7 +91,7 @@
         <dd>
           <div class="b_img">
             <img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/sample.png">
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
           </div>
           <div class="b_right">
             <a
@@ -103,7 +103,7 @@
         <dd>
           <div class="b_img">
             <img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/sample.png">
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
           </div>
           <div class="b_right">
             <a
@@ -115,7 +115,7 @@
         <dd>
           <div class="b_img">
             <img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/sample.png">
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
           </div>
           <div class="b_right">
             <a
@@ -127,7 +127,7 @@
         <dd>
           <div class="b_img">
             <img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/sample.png">
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/sample.png">
           </div>
           <div class="b_right">
             <a
@@ -155,15 +155,15 @@
       <ul>
         <li><a
             href="<?php home_url(); ?>/index.html"><img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/bnr_l.jpg"
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
             href="<?php home_url(); ?>/index.html"><img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/bnr_l.jpg"
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
             href="<?php home_url(); ?>/index.html"><img
-              src="<?php bloginfo('stylesheet_directory'); ?>/images/bnr_l.jpg"
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
       </ul>
     </div><!-- /.bnrL -->

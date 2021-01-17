@@ -9,12 +9,12 @@
   <meta http-equiv="imagetoolbar" content="no" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+  <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
   <script type="text/javascript"
-    src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.js">
+    src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js">
   </script>
   <script type="text/javascript"
-    src="<?php bloginfo('stylesheet_directory'); ?>/js/common.js">
+    src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js">
   </script>
   <script type="text/javascript">
     $(function() {
@@ -41,7 +41,7 @@
   <div id="container">
     <div id="header">
       <h1><a href="<?php home_url(); ?>/index.html"><img
-            src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png"
             alt="SAMPLE WEB SITE" /></a></h1>
       <div id="menu">
         <ul>
