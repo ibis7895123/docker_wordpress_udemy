@@ -40,25 +40,25 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1><a href="<?php home_url(); ?>/index.html"><img
+      <h1><a href="<?php home_url(); ?>/index"><img
             src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png"
             alt="SAMPLE WEB SITE" /></a></h1>
       <div id="menu">
         <ul>
           <li class="home"><a
-              href="<?php home_url(); ?>/index.html">ホーム</a>
+              href="<?php home_url(); ?>/index">ホーム</a>
           </li>
-          <li><a href="<?php home_url(); ?>/service.html">事業内容</a>
+          <li><a href="<?php home_url(); ?>/service">事業内容</a>
           </li>
-          <li><a href="<?php home_url(); ?>/company.html">会社概要</a>
-          </li>
-          <li><a
-              href="<?php home_url(); ?>/archive-news.html">お知らせ</a>
+          <li><a href="<?php home_url(); ?>/company">会社概要</a>
           </li>
           <li><a
-              href="<?php home_url(); ?>/archive-news.html">ブログ</a>
+              href="<?php home_url(); ?>/archive-news">お知らせ</a>
           </li>
-          <li><a href="<?php home_url(); ?>/contact.html">お問い合わせ</a>
+          <li><a
+              href="<?php home_url(); ?>/archive-news">ブログ</a>
+          </li>
+          <li><a href="<?php home_url(); ?>/contact">お問い合わせ</a>
           </li>
         </ul>
       </div><!-- /#menu -->

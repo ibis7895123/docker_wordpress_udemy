@@ -37,7 +37,7 @@
           alt="" /></div>
       <p>事業内容です。あいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
       <p class="topNaviDetail"><a
-          href="<?php home_url(); ?>/service.html">詳しくはこちら</a>
+          href="<?php home_url(); ?>/service">詳しくはこちら</a>
       </p>
     </div><!-- /.topNaviColumn -->
     <div class="topNaviColumn">
@@ -47,7 +47,7 @@
           alt="" /></div>
       <p>会社概要です。左右のコンテンツでテキスト量が異なっても、下の｢詳しくはこちら｣が揃うようになっています。</p>
       <p class="topNaviDetail"><a
-          href="<?php home_url(); ?>/company.html">詳しくはこちら</a>
+          href="<?php home_url(); ?>/company">詳しくはこちら</a>
       </p>
     </div><!-- /.topNaviColumn -->
   </div><!-- /.topNavi -->
@@ -59,26 +59,26 @@
         <dd>
           <span class="tab tag_gyoumu">業務について</span>
           <a
-            href="<?php home_url(); ?>/sample.html">2012年（平成24年）度の採用情報</a>を更新しました。
+            href="<?php home_url(); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。
         </dd>
 
         <dt>2013-08-03</dt>
         <dd>
           <span class="tab tag_release">リリース</span>
           <a
-            href="<?php home_url(); ?>/sample.html">制作実績のページ</a>を更新しました。
+            href="<?php home_url(); ?>/sample">制作実績のページ</a>を更新しました。
         </dd>
         <dt>2013-08-02</dt>
         <dd>
           <span class="tab tag_gyoumu">業務について</span>
           <a
-            href="<?php home_url(); ?>/sample.html">2012年（平成24年）度の採用情報</a>を更新しました。
+            href="<?php home_url(); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。
         </dd>
         <dt>2013-08-01</dt>
         <dd>
           <span class="tab tag_gyoumu">業務について</span>
           <a
-            href="<?php home_url(); ?>/sample.html">制作実績のページ</a>を更新しました。
+            href="<?php home_url(); ?>/sample">制作実績のページ</a>を更新しました。
         </dd>
       </dl>
     </div><!-- /.information -->
@@ -95,7 +95,7 @@
           </div>
           <div class="b_right">
             <a
-              href="<?php home_url(); ?>/sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
           </div>
         </dd>
 
@@ -107,7 +107,7 @@
           </div>
           <div class="b_right">
             <a
-              href="<?php home_url(); ?>/sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
           </div>
         </dd>
 
@@ -119,7 +119,7 @@
           </div>
           <div class="b_right">
             <a
-              href="<?php home_url(); ?>/sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
           </div>
         </dd>
 
@@ -131,7 +131,7 @@
           </div>
           <div class="b_right">
             <a
-              href="<?php home_url(); ?>/sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+              href="<?php home_url(); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
           </div>
         </dd>
 
@@ -144,25 +144,25 @@
       <p>ネット事業です。あいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
       <ul>
         <li><a
-            href="<?php home_url(); ?>/service.html#s1">ホームページ制作</a>
+            href="<?php home_url(); ?>/service#s1">ホームページ制作</a>
         </li>
         <li><a
-            href="<?php home_url(); ?>/service.html#s2">広告代理</a>
+            href="<?php home_url(); ?>/service#s2">広告代理</a>
         </li>
       </ul>
     </div><!-- /.submenu -->
     <div class="bnrL">
       <ul>
         <li><a
-            href="<?php home_url(); ?>/index.html"><img
+            href="<?php home_url(); ?>/index"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
-            href="<?php home_url(); ?>/index.html"><img
+            href="<?php home_url(); ?>/index"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
         <li><a
-            href="<?php home_url(); ?>/index.html"><img
+            href="<?php home_url(); ?>/index"><img
               src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg"
               alt="" /></a></li>
       </ul>
