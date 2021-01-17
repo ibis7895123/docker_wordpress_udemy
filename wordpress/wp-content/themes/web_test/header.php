@@ -9,9 +9,13 @@
   <meta http-equiv="imagetoolbar" content="no" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
+  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+  <script type="text/javascript"
+    src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.js">
+  </script>
+  <script type="text/javascript"
+    src="<?php bloginfo('stylesheet_directory'); ?>/js/common.js">
+  </script>
   <script type="text/javascript">
     $(function() {
       $('#slide').slideshow({
@@ -28,21 +32,34 @@
       });
     });
   </script>
-  <title>あなたのサイト名などお書きください</title>
+  <title><?php bloginfo('name'); ?> | <?php wp_title(); ?>
+  </title>
+  <?php wp_head(); ?>
 </head>
 
 <body>
   <div id="container">
     <div id="header">
-      <h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE" /></a></h1>
+      <h1><a href="<?php home_url(); ?>/index.html"><img
+            src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png"
+            alt="SAMPLE WEB SITE" /></a></h1>
       <div id="menu">
         <ul>
-          <li class="home"><a href="index.html">ホーム</a></li>
-          <li><a href="service.html">事業内容</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="archive-news.html">お知らせ</a></li>
-          <li><a href="archive-news.html">ブログ</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li class="home"><a
+              href="<?php home_url(); ?>/index.html">ホーム</a>
+          </li>
+          <li><a href="<?php home_url(); ?>/service.html">事業内容</a>
+          </li>
+          <li><a href="<?php home_url(); ?>/company.html">会社概要</a>
+          </li>
+          <li><a
+              href="<?php home_url(); ?>/archive-news.html">お知らせ</a>
+          </li>
+          <li><a
+              href="<?php home_url(); ?>/archive-news.html">ブログ</a>
+          </li>
+          <li><a href="<?php home_url(); ?>/contact.html">お問い合わせ</a>
+          </li>
         </ul>
       </div><!-- /#menu -->
     </div><!-- /#header -->

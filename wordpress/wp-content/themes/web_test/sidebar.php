@@ -3,8 +3,12 @@
     <h3>事業内容</h3>
     <h4>ネット事業</h4>
     <ul>
-      <li><a href="service.html#s1">ホームページ制作</a></li>
-      <li><a href="service.html#s2">広告代理</a></li>
+      <li><a
+          href="<?php home_url(); ?>/service.html#s1">ホームページ制作</a>
+      </li>
+      <li><a
+          href="<?php home_url(); ?>/service.html#s2">広告代理</a>
+      </li>
 
     </ul>
 
