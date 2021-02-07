@@ -30,9 +30,12 @@
     href="<?php echo get_template_directory_uri(); ?>/css/clean-blog.min.css"
     rel="stylesheet">
 
+  <?php wp_head(); ?>
 </head>
 
 <body>
+
+  <?php echo date('Y年n月j日') ?>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -85,7 +88,7 @@
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+              <?php the_title('~~~', '===') ?>
             </h2>
             <h3 class="post-subtitle">
               Problems look mighty small from 150 miles up
@@ -193,6 +196,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
 
+  <?php wp_footer(); ?>
 </body>
 
 </html>
