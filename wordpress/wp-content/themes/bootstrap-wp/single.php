@@ -14,7 +14,8 @@
   <?php while (have_posts()): the_post() ?>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <header class="masthead"
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/post-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
