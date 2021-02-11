@@ -14,17 +14,8 @@
   <?php while (have_posts()): the_post(); ?>
 
   <!-- Page Header -->
-  <?php
-  if (has_post_thumbnail()) {
-      $id = get_post_thumbnail_id();
-      $img = wp_get_attachment_image_src($id, 'large');
-      $url = $img[0];
-  } else {
-      $url = get_template_directory_uri() . '/img/post-bg.jpg';
-  }
-  ?>
   <header class="masthead"
-    style="background-image: url(<?php echo $url; ?>)">
+    style="background-image: url(<?php echo get_eyecatch_image_url_with_default(); ?>)">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
