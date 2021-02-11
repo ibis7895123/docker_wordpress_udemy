@@ -5,7 +5,7 @@
   <?php get_header(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
   <!-- Navigation -->
   <?php get_template_part('template-parts/header-nav'); ?>
