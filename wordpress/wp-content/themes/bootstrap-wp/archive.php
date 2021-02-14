@@ -17,7 +17,17 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <?php $h1_title = is_category() ? 'Category' : 'Tag'; ?>
+            <?php
+            if (is_category()) {
+                $h1_title = 'Category';
+            } elseif (is_author()) {
+                $h1_title = 'Author';
+            } elseif (is_date()) {
+                $h1_title = 'Date';
+            } elseif (is_tag()) {
+                $h1_title = 'Tag';
+            }
+            ?>
             <h1>
               <?php echo $h1_title ?>
             </h1>
