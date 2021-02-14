@@ -42,7 +42,7 @@
           </a>
           <p class="post-meta">Posted by
             <?php the_author(); ?>
-            on <?php echo the_time(get_option('date_format')); ?>
+            on <?php echo esc_html(the_time(get_option('date_format'))); ?>
           </p>
         </div>
         <hr>
