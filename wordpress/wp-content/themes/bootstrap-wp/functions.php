@@ -2,7 +2,15 @@
 add_action(
     'init',
     function () {
+        add_theme_support('title-tag');
         add_theme_support('post-thumbnails');
+
+        // メニュー機能をサポート
+        register_nav_menus(
+            [
+                'global_nav' => 'グローバルナビゲーション',
+            ]
+        );
     }
 );
 
