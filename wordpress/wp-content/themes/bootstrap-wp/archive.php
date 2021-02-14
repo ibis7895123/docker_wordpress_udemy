@@ -17,7 +17,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Category</h1>
+            <?php $h1_title = is_category() ? 'Category' : 'Tag'; ?>
+            <h1>
+              <?php echo $h1_title ?>
+            </h1>
             <span class="subheading"><?php wp_title(''); ?></span>
           </div>
         </div>
