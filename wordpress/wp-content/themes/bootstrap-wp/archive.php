@@ -63,7 +63,19 @@
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          <?php
+            $link_previous_html = get_previous_posts_link('&larr; Newer Posts');
+            // get_previous_posts_linkで取得できるaタグにはclassがないので付与する
+            $link_previous_html = str_replace('<a', '<a class="btn btn-primary float-left"', $link_previous_html);
+            echo $link_previous_html;
+          ?>
+
+          <?php
+            $link_next_html = get_next_posts_link('Older Posts &rarr;');
+            // get_next_posts_linkで取得できるaタグにはclassがないので付与する
+            $link_next_html = str_replace('<a', '<a class="btn btn-primary float-right"', $link_next_html);
+            echo $link_next_html;
+          ?>
         </div>
 
         <?php else: ?>
