@@ -211,3 +211,16 @@ add_action('init', function () {
 add_shortcode('date', function () {
     return date('Y.m.d');
 });
+
+add_shortcode('sum', function ($atts) {
+    $atts = shortcode_atts(
+        [
+            'x' => 0,
+            'y' => 0,
+        ],
+        $atts,
+        'sum'
+    );
+
+    return (int) $atts['x'] +  (int) $atts['y'];
+});
