@@ -29,6 +29,34 @@
 
     <?php udemy__s_post_thumbnail(); ?>
 
+    <?php $price = get_post_meta(get_the_ID(), '価格', true); ?>
+    <?php $publisher = get_post_meta(get_the_ID(), '出版社', true); ?>
+    <?php $writers = get_post_meta(get_the_ID(), '著者', false); ?>
+    <dl>
+        <?php if ($price): ?>
+        <dt>価格</dt>
+        <dd>
+            <?php echo esc_html(number_format((float) $price)); ?>円
+        </dd>
+        <?php endif; ?>
+
+        <?php if ($publisher): ?>
+        <dt>出版社</dt>
+        <dd>
+            <?php echo esc_html($publisher); ?>
+        </dd>
+        <?php endif; ?>
+
+        <?php if ($writers): ?>
+        <dt>著者</dt>
+        <?php foreach ($writers as $writer): ?>
+        <dd>
+            <?php echo esc_html($writer); ?>
+        </dd>
+        <?php endforeach; ?>
+        <?php endif; ?>
+    </dl>
+
     <div class="entry-content">
         <?php
             the_content(
@@ -45,17 +73,6 @@
                     wp_kses_post(get_the_title())
                 )
             );
-
-            wp_link_pages(
-                [
-                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'udemy-udemy-_s'),
-                    'after' => '</div>',
-                ]
-            );
         ?>
     </div><!-- .entry-content -->
-
-    <footer class="entry-footer">
-        <?php udemy__s_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -194,6 +194,7 @@ add_action('init', function () {
                 'title',
                 'editor',
                 'page-attributes',
+                'custom-fields',
             ],
             'has_archive' => true,
             'hierarchical' => true,
