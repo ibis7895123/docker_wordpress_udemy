@@ -207,3 +207,7 @@ add_action('init', function () {
         'show_in_rest' => true,
     ]);
 });
+
+add_shortcode('date', function () {
+    return date('Y.m.d');
+});
