@@ -192,9 +192,17 @@ add_action('init', function () {
             'supports' => [
                 'thumbnail',
                 'title',
-                'editor'
+                'editor',
+                'page-attributes',
             ],
             'has_archive' => true,
+            'hierarchical' => true,
+            'show_in_rest' => true,
         ]
     );
+    register_taxonomy('genre', 'item', [
+        'label' => '商品ジャンル',
+        'hierarchical' => true,
+        'show_in_rest' => true,
+    ]);
 });
