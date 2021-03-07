@@ -29,8 +29,8 @@
 
     <?php udemy__s_post_thumbnail(); ?>
 
-    <?php $price = get_post_meta(get_the_ID(), '価格', true); ?>
-    <?php $publisher = get_post_meta(get_the_ID(), '出版社', true); ?>
+    <?php $price = get_post_meta(get_the_ID(), 'price', true); ?>
+    <?php $publisher = get_post_meta(get_the_ID(), 'publisher', true); ?>
     <?php $writers = get_post_meta(get_the_ID(), '著者', false); ?>
     <dl>
         <?php if ($price): ?>
