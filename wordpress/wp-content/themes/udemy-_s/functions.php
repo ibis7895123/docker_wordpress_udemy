@@ -194,6 +194,7 @@ add_action('init', function () {
                 'title',
                 'editor'
             ],
+            'has_archive' => true,
         ]
     );
 });
